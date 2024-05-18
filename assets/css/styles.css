@@ -1,0 +1,25 @@
+/* Define styl for the index */
+/*  divs have solid borders, style is flat, black and white */
+
+/*  Dark Mode */
+
+.dark {
+    background-color:#262447;
+    height: 100vh;
+    color: #bebebe
+   
+  }
+
+  /* insert elements dark mode below */
+/*  check if you will use hovers too for buttons */
+
+/* Light mode */
+
+.light {
+    background-color: #f0ead6;
+    color: black;
+    height: 100vh;
+  }
+  
+    /* insert elements light mode below */
+  
