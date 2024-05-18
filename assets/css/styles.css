@@ -1,6 +1,14 @@
 /* Define styl for the index */
 /*  divs have solid borders, style is flat, black and white */
-
+header {
+background-color: black;
+width: 100%;
+display: block;
+  border: 5px, solid, #262447;
+  height: 200 px;
+  margin: 0px;
+  margin-bottom: 10px;
+}
 /*  Dark Mode */
 
 .dark {

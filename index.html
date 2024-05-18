@@ -12,10 +12,30 @@
     </header>
     <!-- Aside to 50% width-->
     <aside>
+        <img src=""> </img>
     </aside>
     <!-- Do I have to insert the form into a div? -->
-    <form></form>
+    <form method="post">
+        <h2>What's on your mind?</h2>
+        <div class="inputGroup">
+    <!-- Research why use for and not id # -->
+        <label for ='username'> Username</label>
+        <input type="text" name="username" id="username"></textarea>
+    </div>
+    <div class="inputGroup">
+            <label for ='title'> Title</label>
+            <input type="text" name="title" id="title"></textarea>
+        </div>
+        <div class="inputGroup">
+            <label for ='content'>Content</label>
+            <textarea type="text" name="content" id="content"></textarea>
+        </div>
 
-    <script> </script>
+        <div class="submitButton">
+            <button id="submitButton"> Submit</button>
+        </div>
+    </form>
+
+    <script src="assets/js/form.js"></script>
 </body>
-</html>
+</html> 
