@@ -1,5 +1,5 @@
 # Web-APIs-Personal-Blog
-This repository contains my entry for **Week's 3 Coding BootCamp Challenge: Web APIs: Personal Blog** 
+This repository contains **Week's 3 Coding BootCamp Challenge: Web APIs: Personal Blog**  entry.
 
 The goal is to create a two-page website where users will input and view blog posts. It includes building a content form, dynamically rendering blog posts, and implementing a light/dark mode toggle. 
 
