@@ -15,20 +15,38 @@ const submitButton = document.getElementById('submitButton');
 
 
 submitButton.addEventListener('click', function (event) {
-event.preventDefault();
+    event.preventDefault();
+
+    // Check if all the fields have info
+    // if (
+    //      usernameInput.value === " "; &&
+    //      titleInput.valu === " "; &&
+    //      contentInput.value === " ";
+
+    // ) {
 
 
-const blogPost = {
-    username: username.value,
-    title: titleInput.value,
-    content: contentInput.value,
-};
+    // alert("Please fill all ther form fields");
+    //    break;
 
-localStorage.setItem('blogPost', JSON.stringify(blogPost));
+    // }
+    // else {
 
-//console.log(blogPost);
-// Redirect to blogpost pages
-location.href = "https://leenacruz.com/";
 
-});
+        const blogPost = {
+            username: usernameInput.value,
+            title: titleInput.value,
+            content: contentInput.value,
+        };
+
+
+        localStorage.setItem('blogPost', JSON.stringify(blogPost));
+
+        console.log(blogPost);
+        // Redirect to blogpost pages * check target blank/new window
+        location.href = "https://leenacruz.com/";
+
+       // }
+
+    });
 
