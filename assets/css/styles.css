@@ -7,9 +7,6 @@
 
 }
 
-.container {
-  border: 5px solid black;
-}
 
 .header {
   /* background-color: black;
@@ -32,12 +29,17 @@ margin-bottom: 10px;
 }
 
 .photo {
-  border: 5px, solid, black;
-width: 50%;
-height: auto;
-
+  border: 5px solid black;
+  width: 49%;
+  height: 100vh;
+  display: block;
+  float: left;
+  /* margin-right: 5px; */
 }
-
+/* Center image */
+.photo img {
+border: 10px solid red;
+}
 
 
 /*  Dark Mode */
