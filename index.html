@@ -1,41 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Blog - Leena</title>
-    <link rel="stylesheet" href="../Web-APIs-Personal-Blog/assets/css/styles.css">
-    <link rel="stylesheet" href="../assets/css/form.css"
-</head>
+    <link rel="stylesheet" href="/assets/css/styles.css">
+    <link rel="stylesheet" href="../assets/css/form.css" </head>
+
 <body>
-    <header></header>
+    <header class="header"></header>
     <!-- Aside to 50% width-->
-    <aside>
+    <aside class="photo">
         <img id="img"> </img>
     </aside>
     <!-- Do I have to insert the form into a div? -->
-    <form method="post">
-        <h2>What's on your mind?</h2>
-        <div class="inputGroup">
-    <!-- Research why use for and not id # -->
-        <label for ='username'> Username</label>
-        <input type="text" name="username" id="username"></textarea>
+    <div class="container">
+        <form method="post">
+            <h2>What's on your mind?</h2>
+            <div class="inputGroup">
+                <!-- Research why use for and not id # -->
+                <label for='username'> Username</label>
+                <input type="text" name="username" id="username"></textarea>
+            </div>
+            <div class="inputGroup">
+                <label for='title'> Title</label>
+                <input type="text" name="title" id="title"></textarea>
+            </div>
+            <div class="inputGroup">
+                <label for='content'>Content</label>
+                <textarea type="text" name="content" id="content"></textarea>
+            </div>
+
+            <div class="submitButton">
+                <button id="submitButton"> Submit</button>
+            </div>
+        </form>
     </div>
-    <div class="inputGroup">
-            <label for ='title'> Title</label>
-            <input type="text" name="title" id="title"></textarea>
-        </div>
-        <div class="inputGroup">
-            <label for ='content'>Content</label>
-            <textarea type="text" name="content" id="content"></textarea>
-        </div>
-
-        <div class="submitButton">
-            <button id="submitButton"> Submit</button>
-        </div>
-    </form>
-
     <script src="assets/js/form.js"></script>
     <script src="assets/js/logic.js"></script>
 </body>
-</html> 
+
+</html>

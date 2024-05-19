@@ -1,4 +1,10 @@
-* 
+
+.container {
+    border: 5 px, solid,black;
+    
+    }
+
+
 form {
     background-color: blueviolet;
     border: 5px, solid, black;
@@ -9,3 +15,5 @@ form {
     line-height: 5px;
     float: right;
 }
+/* .photo */
+
