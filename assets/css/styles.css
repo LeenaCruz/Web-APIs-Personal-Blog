@@ -31,11 +31,15 @@ margin-bottom: 10px;
 
 }
 
+.photo {
+  border: 5px, solid, black;
+width: 50%;
+height: auto;
 
-.inputGroup {
-  font-size: 20px;
-  color: #bebebe;
 }
+
+
+
 /*  Dark Mode */
 
 .dark {
