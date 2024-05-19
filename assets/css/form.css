@@ -27,6 +27,8 @@ form h2 {
     text-align: center;
 }
 
+
+
 .inputGroup {
     margin:10px;
     padding: 5px;
@@ -34,6 +36,15 @@ form h2 {
     font-size: 20px;
     color: #bebebe;
     text-align: center;
+  }
+
+  .inputGroup label {
+    padding: 5px;
+  }
+  /* Make fields stretch to fit container */
+  .inputGroup input {
+    margin: 5px;
+    width:100%;
   }
 
   .submitButton {

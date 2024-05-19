@@ -17,6 +17,7 @@ const submitButton = document.getElementById('submitButton');
 submitButton.addEventListener('click', function (event) {
     event.preventDefault();
 
+    do while 
     // Check if all the fields have info
     // if (
     //      usernameInput.value === " "; &&
