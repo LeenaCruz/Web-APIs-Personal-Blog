@@ -41,6 +41,17 @@ margin-bottom: 10px;
 border: 10px solid red;
 }
 
+.mode {
+  height: 100px;
+  justify-content: right;
+  text-align: right;
+}
+.mode img {
+margin-top: 25px;
+margin-right: 20px;
+align-items: center;
+
+}
 
 /*  Dark Mode */
 

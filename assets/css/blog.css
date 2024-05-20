@@ -2,6 +2,40 @@
 
 /* button style */
 
+.header div {
+    margin: 10px;
+   
+    display: inline-block;
+
+
+}
+ .header div h1 {
+    /* align left */
+ }
+
+
+.menuRight {
+    margin-top: 25px;
+    margin-right: 20px;
+}
+
+
+.backbutton{
+    display: inline-block;
+    /* margin-left: 200px; */
+
+}
+
+.mode {
+    height: 100px;
+    justify-content: right;
+    text-align: right;
+  }
+  .mode img {
+  align-items: center;
+  
+  }
+  
 .card {
     border: 2px solid black;
 
