@@ -4,6 +4,7 @@ const titleInput = document.getElementById('title');
 const contentInput = document.getElementById('content');
 const submitButton = document.getElementById('submitButton');
 
+
 submitButton.addEventListener('click', function (event) {
     event.preventDefault();
    if (usernameInput.value === "" ||

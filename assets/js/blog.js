@@ -4,3 +4,9 @@
 // Populat cards
 // Populate  Footer portfolio info
 
+
+const backButton = document.querySelector('button');
+
+backButton.addEventListener('click', function (event){
+    location.href = "./index.html";
+});
