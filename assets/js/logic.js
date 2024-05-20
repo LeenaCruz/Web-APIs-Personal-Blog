@@ -7,7 +7,7 @@ const photoEl = document.querySelector('photo');
 const blogPosts = document.querySelector('blockPosts')
 
 const imgEL = document.querySelector('img');
-imgEL.setAttribute('src', 'assets/hero-image.jpg');
+imgEL.setAttribute('src', './assets/hero-image.jpg');
 
 // HEADER // Funciona pero tengo que poner le script arriba y no me gusta eso.
 // const headerEL = document.createElement("header");

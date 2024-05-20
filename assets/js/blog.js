@@ -7,6 +7,7 @@
 
 const backButton = document.querySelector('button');
 
-backButton.addEventListener('click', function (event){
+backButton.addEventListener('click', function (){
     location.href = "./index.html";
 });
+
