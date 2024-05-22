@@ -5,12 +5,48 @@
 // Populate  Footer portfolio info
 const footerEl = document.querySelector('footer');
 const blogPosts = document.querySelector('blockPosts');
-
 const backButton = document.querySelector('button');
+const postsArray = [];
 
-backButton.addEventListener('click', function (){
+
+backButton.addEventListener('click', function (event){
+    event.preventDefault();
     location.href = "./index.html";
 });
+
+
+
+//Retrieve from Local Storage
+// postsArray.push(blogObject);
+
+//  console.log(postsArray);
+
+
+//  const blogObject = JSON.parse(localStorage.getItem('blogPost'));
+//  postsArray.push(blogObject);
+// console.log(postsArray);
+
+
+function init () {
+localStorage.getItem(postsArray);
+//const blogObject = JSON.parse(localStorage.getItem('blogPost'));
+postsArray.push(blogObject);
+console.log(postsArray);
+localStorage.setItem('postsArray', JSON.parse(postsArray));
+}
+init();
+// submitButton.addEventListener('submit', function (event) {
+//     event.preventDefault();
+//     const blogObject = JSON.parse(localStorage.getItem('blogPost'));
+//     postsArray.push(blogObject);
+
+// }
+// )
+
+
+
+
+
 
 
 

@@ -5,7 +5,6 @@ const containerEl = document.querySelector('container');
 const formEl = document.querySelector('form');
 //const photoEl = document.querySelector('photo');
 
-
 // const imgEL = document.querySelector('img');
 // imgEL.setAttribute('src', './assets/hero-image.jpg');
 

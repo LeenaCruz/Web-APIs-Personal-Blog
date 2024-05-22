@@ -32,19 +32,28 @@ form h2 {
 .inputGroup {
     margin:10px;
     padding: 5px;
-    line-height: 5px;
+    line-height: 10px;
     font-size: 20px;
     color: #bebebe;
     text-align: center;
+    
+  
   }
 
-  .inputGroup label {
+  .inputGroup label  {
     padding: 5px;
+    margin-bottom: 5px;
+    
   }
   /* Make fields stretch to fit container */
   .inputGroup input {
     margin: 5px;
     width:100%;
+  }
+
+  .inputGroup textarea {
+    width:100%;
+  
   }
 
   .submitButton {
