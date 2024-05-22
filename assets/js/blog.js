@@ -6,8 +6,17 @@
 const footerEl = document.querySelector('footer');
 const blogPosts = document.querySelector('blockPosts');
 const backButton = document.querySelector('button');
-const postsArray = [];
 
+
+
+
+
+const postsArray = JSON.parse(localStorage.getItem('postsArray')) || [];
+
+//const allPosts = localStorage.getItem('postsArray');
+
+// console.log(allPosts);
+console.log(postsArray);
 
 backButton.addEventListener('click', function (event){
     event.preventDefault();
@@ -27,14 +36,18 @@ backButton.addEventListener('click', function (event){
 // console.log(postsArray);
 
 
-function init () {
-localStorage.getItem(postsArray);
-//const blogObject = JSON.parse(localStorage.getItem('blogPost'));
-postsArray.push(blogObject);
-console.log(postsArray);
-localStorage.setItem('postsArray', JSON.parse(postsArray));
-}
-init();
+// function init () {
+// //localStorage.getItem(postsArray);
+// // const blogObject = JSON.parse(localStorage.getItem('blogPost'));
+// // postsArray.push(blogObject);
+
+ //const newBlogPost = localStorage.getItem(postsArray);
+// postsArray.push(newBlogPost);
+// localStorage.setItem('postsArray', JSON.stringify(postsArray));
+// console.log(postsArray);
+// }
+// init();
+
 // submitButton.addEventListener('submit', function (event) {
 //     event.preventDefault();
 //     const blogObject = JSON.parse(localStorage.getItem('blogPost'));
