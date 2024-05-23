@@ -1,16 +1,12 @@
 // Icon of dark mode could be here?
 
-const body = document.body;
+
 const containerEl = document.querySelector('container');
 const formEl = document.querySelector('form');
 //const photoEl = document.querySelector('photo');
 
 // const imgEL = document.querySelector('img');
 // imgEL.setAttribute('src', './assets/hero-image.jpg');
-
-const imgEL = document.getElementById('imgHero');
-imgEL.setAttribute('src', './assets/hero-image.jpg');
-
 
 
 // HEADER // Funciona pero tengo que poner le script arriba y no me gusta eso.

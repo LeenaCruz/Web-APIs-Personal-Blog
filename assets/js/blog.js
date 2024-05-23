@@ -3,25 +3,55 @@
 // retrieve object from localStorage
 // Populat cards
 // Populate  Footer portfolio info
+const body = document.body;
 const footerEl = document.querySelector('footer');
-const blogPosts = document.querySelector('blockPosts');
+//const blogPosts = document.querySelector('blogPosts');
+const blogPosts = document.getElementById('blogPosts');
 const backButton = document.querySelector('button');
-
-
-
-
-
-const postsArray = JSON.parse(localStorage.getItem('postsArray')) || [];
-
-//const allPosts = localStorage.getItem('postsArray');
-
-// console.log(allPosts);
-console.log(postsArray);
 
 backButton.addEventListener('click', function (event){
     event.preventDefault();
     location.href = "./index.html";
 });
+
+function init() {
+const postsArray = JSON.parse(localStorage.getItem('postsArray')) || [];
+
+//const allPosts = localStorage.getItem('postsArray');
+// console.log(allPosts);
+console.log(postsArray);
+
+for (let index = postsArray.length-1; index >= 0; index--) {
+   
+    const cardEl = document.createElement('div');
+    const titleEl = document.createElement('h2');
+    const contentEl = document.createElement('p');
+    const authorEl = document.createElement('p');
+
+    titleEl.textContent = postsArray[index].title;
+contentEl.textContent = postsArray[index].content;
+authorEl.textContent = postsArray[index].username;
+
+cardEl.appendChild(titleEl);
+cardEl.appendChild(contentEl);
+cardEl.appendChild(authorEl);
+blogPosts.appendChild(cardEl);
+
+cardEl.setAttribute('class', 'card')
+// titleEl.setAttribute('class', 'title')
+contentEl.setAttribute('class', 'content')
+
+}
+
+}
+
+
+init();
+
+
+
+
+
 
 
 

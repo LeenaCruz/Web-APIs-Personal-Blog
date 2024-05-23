@@ -34,7 +34,7 @@ padding: 20px;
   /* margin-bottom: 10px; */
 
 display: flex; 
-/* check what space between does */
+/* check what does space between */
 justify-content: space-between;
 }
 
@@ -46,7 +46,7 @@ justify-content: space-between;
   } 
   
 
-  ul {
+ header ul {
     /* background-color: red;
     height: 90px;
     width: 200px;
@@ -63,7 +63,7 @@ justify-content: space-between;
   
   }
   
-ul li {
+header ul li {
   /* height: 100px;
   width: auto;
 padding: 10px;
@@ -126,8 +126,30 @@ margin-right: 10px;
   
   } */
   
+  .blogPosts {
+overflow-y: scroll;
+
+
+  }
+
 .card {
     border: 2px solid black;
+    width: 95%;
+    margin: auto;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    padding: 10px;
+    
 
 }
 
+.title {
+
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.content {
+  margin-bottom: 10px;
+  padding-top: 5px;
+}

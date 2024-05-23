@@ -4,6 +4,8 @@ const titleInput = document.getElementById('title');
 const contentInput = document.getElementById('content');
 const submitButton = document.getElementById('submitButton');
 
+const imgEL = document.getElementById('imgHero');
+imgEL.setAttribute('src', './assets/hero-image.jpg');
 
 submitButton.addEventListener('click', function (event) {
     event.preventDefault();
