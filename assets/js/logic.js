@@ -18,6 +18,13 @@ const container = document.querySelector('.styleAll')
 modeSwitcher.setAttribute('src', './assets/images/light-icon.png' )
 modeSwitcher.setAttribute('class', 'modeSwitcher')
 
+let mode = localStorage.getItem('currentMode');
+console.log(mode);
+
+
+
+
+
 // on click event 
 
 function init() {
@@ -32,7 +39,7 @@ function init() {
         // modeSwitcher();
      
 
-        if (mode === 'dark') {
+        if (mode === 'light') {
             mode = 'light';
             container.setAttribute('class', 'light');
             modeSwitcher.setAttribute('src', './assets/images/light-icon.png')
@@ -54,8 +61,6 @@ function init() {
 // let mode = JSON.parse(localStorage.getItem('currentMode')); 
 
 
-let mode = localStorage.getItem('currentMode');
-console.log(mode);
 
 
 modeSwitcher.addEventListener('click', function () {
