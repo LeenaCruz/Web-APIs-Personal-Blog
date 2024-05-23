@@ -1,101 +1,50 @@
-/* Define cards style for blog posts */
-
 /* button style */
 
-/* .header div {
-    margin: 10px;
-   
-    display: inline-block;
-
-
-}
- 
-
-.menuRight {
-    margin-top: 25px;
-    margin-right: 20px;
-} */
-
 .header {
-  /* background-color: black;
+
   width: 100%;
-  display: block;
-  position: absolute;
-  /* border: 5px, solid, #262447; 
-  height: 200 px;
-    margin: 0px;
-  margin-bottom: 10px; */
-width: 100%;
-padding: 20px;
+  padding: 20px;
   height: 100px;
   border-bottom: 5px solid black;
-  /* top: 0px; */
-  /* margin-bottom: 10px; */
-
-display: flex; 
-/* check what does space between */
-justify-content: space-between;
+  display: flex;
+  /* check what does space between */
+  justify-content: space-between;
 }
 
+.header h1 {
+  display: inline-block;
+}
 
- .header  h1 {
-
-    display: inline-block;
-  
-  } 
-  
-
- header ul {
-    /* background-color: red;
-    height: 90px;
-    width: 200px;
-    display: flex;
-    justify-content: right;
-
-    margin-left:83%;
-   */
-
-   /* padding-top: 15px; */
-   list-style-type: none; 
+header ul {
+  list-style-type: none;
   display: flex;
   align-items: center;
-  
-  }
-  
-header ul li {
-  /* height: 100px;
-  width: auto;
-padding: 10px;
-*/
+}
 
-margin-left: 10px;
-margin-right: 10px;
+header ul li {
+  margin-left: 10px;
+  margin-right: 10px;
 }
 
 .button {
   display: inline-block;
-
 }
- 
-  .blogPosts {
-overflow-y: scroll;
 
+.blogPosts {
+  overflow-y: scroll;
+}
 
-  }
-
-.card  {
-    border: 2px solid black;
-    width: 95%;
-    margin: auto;
-    margin-top: 5px;
-    margin-bottom: 5px;
-    padding: 10px;
-    
-
+/* Define cards style for blog posts */
+.card {
+  border: 2px solid black;
+  width: 95%;
+  margin: auto;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  padding: 10px;
 }
 
 .title {
-
   font-size: 16px;
   font-weight: bold;
 }
@@ -104,4 +53,3 @@ overflow-y: scroll;
   margin-bottom: 10px;
   padding-top: 5px;
 }
-

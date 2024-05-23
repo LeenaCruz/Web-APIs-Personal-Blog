@@ -15,15 +15,11 @@
 const modeSwitcher = document.querySelector('.modeSwitcher')
 const container = document.querySelector('.styleAll')
 
-modeSwitcher.setAttribute('src', './assets/images/light-icon.png' )
+modeSwitcher.setAttribute('src', './assets/images/light-icon.png')
 modeSwitcher.setAttribute('class', 'modeSwitcher')
 
-let mode = localStorage.getItem('currentMode');
-console.log(mode);
-
-
-
-
+// let mode = localStorage.getItem('currentMode');
+// console.log(mode);
 
 // on click event 
 
@@ -31,55 +27,46 @@ function init() {
 
     mode = localStorage.getItem('currentMode');
 
-    //  if (mode === "") {
+    if (mode.value === "") {
+        mode = 'light';
+        container.setAttribute('class', 'light');
+        modeSwitcher.setAttribute('src', './assets/images/light-icon.png')
+    }
 
-    //     mode = 'light';
-    //     }
-        
-        // modeSwitcher();
-     
+    else if (mode === 'light') {
+        mode = 'light';
+        container.setAttribute('class', 'light');
+        modeSwitcher.setAttribute('src', './assets/images/light-icon.png')
+    }
 
-        if (mode === 'light') {
-            mode = 'light';
-            container.setAttribute('class', 'light');
-            modeSwitcher.setAttribute('src', './assets/images/light-icon.png')
-        }
-        
-        else {
-            mode = 'dark';
-            container.setAttribute('class', 'dark');
-            modeSwitcher.setAttribute('src', './assets/images/dark-icon.png')
-        }
-        
-        localStorage.setItem('currentMode', (mode));
-         console.log(mode);
+    else {
+        mode = 'dark';
+        container.setAttribute('class', 'dark');
+        modeSwitcher.setAttribute('src', './assets/images/dark-icon.png')
+    }
 
+    localStorage.setItem('currentMode', (mode));
+    console.log(mode);
 
 }
-
-// let mode = 'light';
-// let mode = JSON.parse(localStorage.getItem('currentMode')); 
-
-
-
 
 modeSwitcher.addEventListener('click', function () {
 
 
-if (mode === 'dark') {
-    mode = 'light';
-    container.setAttribute('class', 'light');
-    modeSwitcher.setAttribute('src', './assets/images/light-icon.png')
-}
+    if (mode === 'dark') {
+        mode = 'light';
+        container.setAttribute('class', 'light');
+        modeSwitcher.setAttribute('src', './assets/images/light-icon.png')
+    }
 
-else {
-    mode = 'dark';
-    container.setAttribute('class', 'dark');
-    modeSwitcher.setAttribute('src', './assets/images/dark-icon.png')
-}
+    else {
+        mode = 'dark';
+        container.setAttribute('class', 'dark');
+        modeSwitcher.setAttribute('src', './assets/images/dark-icon.png')
+    }
 
-localStorage.setItem('currentMode', (mode));
- console.log(mode);
+    localStorage.setItem('currentMode', (mode));
+    console.log(mode);
 });
 
 init();
