@@ -25,6 +25,7 @@ function init() {
 
     for (let index = postsArray.length - 1; index >= 0; index--) {
 
+
         const cardEl = document.createElement('div');
         const titleEl = document.createElement('h2');
         const contentEl = document.createElement('p');
@@ -32,7 +33,7 @@ function init() {
 
         titleEl.textContent = postsArray[index].title;
         contentEl.textContent = postsArray[index].content;
-        authorEl.textContent = postsArray[index].username;
+        authorEl.textContent = "- " + postsArray[index].username;
 
         cardEl.appendChild(titleEl);
         cardEl.appendChild(contentEl);
@@ -42,8 +43,14 @@ function init() {
         cardEl.setAttribute('class', 'card')
         // titleEl.setAttribute('class', 'title')
         contentEl.setAttribute('class', 'content')
+        authorEl.setAttribute('class', 'author')
+
+      
 
     }
+
+
+
 }
 
 
