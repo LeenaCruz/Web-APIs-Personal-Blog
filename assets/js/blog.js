@@ -9,42 +9,41 @@ const footerEl = document.querySelector('footer');
 const blogPosts = document.getElementById('blogPosts');
 const backButton = document.querySelector('button');
 
-backButton.addEventListener('click', function (event){
+backButton.addEventListener('click', function (event) {
     event.preventDefault();
     // let mode = localStorage.getItem('currentMode');
     location.href = "./index.html";
-// console.log(mode);
+    // console.log(mode);
 });
 
 function init() {
-const postsArray = JSON.parse(localStorage.getItem('postsArray')) || [];
+    const postsArray = JSON.parse(localStorage.getItem('postsArray')) || [];
 
-//const allPosts = localStorage.getItem('postsArray');
-// console.log(allPosts);
-console.log(postsArray);
+    //const allPosts = localStorage.getItem('postsArray');
+    // console.log(allPosts);
+    console.log(postsArray);
 
-for (let index = postsArray.length-1; index >= 0; index--) {
-   
-    const cardEl = document.createElement('div');
-    const titleEl = document.createElement('h2');
-    const contentEl = document.createElement('p');
-    const authorEl = document.createElement('p');
+    for (let index = postsArray.length - 1; index >= 0; index--) {
 
-    titleEl.textContent = postsArray[index].title;
-contentEl.textContent = postsArray[index].content;
-authorEl.textContent = postsArray[index].username;
+        const cardEl = document.createElement('div');
+        const titleEl = document.createElement('h2');
+        const contentEl = document.createElement('p');
+        const authorEl = document.createElement('p');
 
-cardEl.appendChild(titleEl);
-cardEl.appendChild(contentEl);
-cardEl.appendChild(authorEl);
-blogPosts.appendChild(cardEl);
+        titleEl.textContent = postsArray[index].title;
+        contentEl.textContent = postsArray[index].content;
+        authorEl.textContent = postsArray[index].username;
 
-cardEl.setAttribute('class', 'card')
-// titleEl.setAttribute('class', 'title')
-contentEl.setAttribute('class', 'content')
+        cardEl.appendChild(titleEl);
+        cardEl.appendChild(contentEl);
+        cardEl.appendChild(authorEl);
+        blogPosts.appendChild(cardEl);
 
-}
+        cardEl.setAttribute('class', 'card')
+        // titleEl.setAttribute('class', 'title')
+        contentEl.setAttribute('class', 'content')
 
+    }
 }
 
 
@@ -73,7 +72,7 @@ init();
 // // const blogObject = JSON.parse(localStorage.getItem('blogPost'));
 // // postsArray.push(blogObject);
 
- //const newBlogPost = localStorage.getItem(postsArray);
+//const newBlogPost = localStorage.getItem(postsArray);
 // postsArray.push(newBlogPost);
 // localStorage.setItem('postsArray', JSON.stringify(postsArray));
 // console.log(postsArray);
@@ -96,5 +95,5 @@ init();
 
 
 // Footer  h2 Made with love by Leena
-//  Portfolio: Blog: Email: 
+//  Portfolio: Blog: Email:
 // Crear objecto datosFooter, crear footer element, crear h2, append.
