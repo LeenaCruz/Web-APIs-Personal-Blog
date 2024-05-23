@@ -12,7 +12,6 @@ font-family: ;
   width: 100%;
   height: 100px;
   border-bottom: 5px solid black;
-  background-color: white;
   /* clear:both; */
   top: 0px;
   margin-bottom: 10px;
@@ -83,6 +82,7 @@ font-family: ;
 /*  Dark Mode */
 
 .dark {
+  border-color:  white;
   background-color: #262447;
   height: 100vh;
   color: #bebebe
@@ -91,13 +91,52 @@ font-family: ;
 /* insert elements dark mode below */
 /*  check if you will use hovers too for buttons */
 
+.dark header {
+  border-color: rgb(198, 168, 216);
+}
+.dark aside {
+  border-color: rgb(198, 168, 216);
+}
+
+.dark main {
+  border: 5px  solid  rgb(198, 168, 216);
+
+}
+
+.dark form {
+  color: rgb(198, 168, 216);
+}
+
+
 /* Light mode */
 
 .light {
-  background-color: #f0ead6;
+  /* border: 5px solid rgb(129, 18, 194); */
+  background-color: #f4e3fc;
   color: black;
   height: 100vh;
 }
+
+.light header {
+  border-color: rgb(129,18,194);
+}
+.light aside {
+  border-color: rgb(129,18,194);
+}
+
+.light main {
+  border: 5px  solid  rgb(129,18,194);
+
+}
+
+.light form {
+  color: #9b1894;
+}
+
+/* .light .submitButton {
+  background-color: #9b1894;
+} */
+
 
 /* insert elements light mode below */
 .blogPosts {

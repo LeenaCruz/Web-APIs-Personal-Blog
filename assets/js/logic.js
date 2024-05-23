@@ -24,13 +24,30 @@ function init() {
 
     mode = localStorage.getItem('currentMode');
 
-     if (mode === "") {
+    //  if (mode === "") {
 
-        mode = 'light';
-        }
+    //     mode = 'light';
+    //     }
         
         // modeSwitcher();
      
+
+        if (mode === 'dark') {
+            mode = 'light';
+            container.setAttribute('class', 'light');
+            modeSwitcher.setAttribute('src', './assets/images/light-icon.png')
+        }
+        
+        else {
+            mode = 'dark';
+            container.setAttribute('class', 'dark');
+            modeSwitcher.setAttribute('src', './assets/images/dark-icon.png')
+        }
+        
+        localStorage.setItem('currentMode', (mode));
+         console.log(mode);
+
+
 }
 
 // let mode = 'light';
@@ -38,7 +55,7 @@ function init() {
 
 
 let mode = localStorage.getItem('currentMode');
-
+console.log(mode);
 
 
 modeSwitcher.addEventListener('click', function () {
@@ -56,8 +73,8 @@ else {
     modeSwitcher.setAttribute('src', './assets/images/dark-icon.png')
 }
 
-localStorage.setItem('currentMode', JSON.stringify(mode));
-// console.log(mode);
+localStorage.setItem('currentMode', (mode));
+ console.log(mode);
 });
 
 init();
