@@ -50,11 +50,6 @@ font-family: ;
   /* margin-right: 5px; */
 }
 
-/* Center image */
-/* .photo img {
-  border: 10px solid red;
-}
- */
 #imgHero {
   /* border: 10px solid red; */
   position: absolute;
@@ -64,20 +59,6 @@ font-family: ;
 
 }
 
-/* 
- .mode {
-  height: 100px;
-  border: 5px  solid purple;
-  justify-content: right;
-  text-align: right;
-} 
-
- .mode img {
-  margin-top: 25px;
-  margin-right: 20px;
-  align-items: center;
-
-} */
 
 /*  Dark Mode */
 
@@ -88,23 +69,28 @@ font-family: ;
   color: rgb(198, 168, 216);
 }
 
-/* insert elements dark mode below */
-/*  check if you will use hovers too for buttons */
+.dark body {
+  color: rgb(198, 168, 216);
+  background-color: #262447;
 
+}
 .dark header {
   border-color: rgb(198, 168, 216);
 }
 .dark aside {
   border-color: rgb(198, 168, 216);
+  background-color: #262447;
 }
 
 .dark main {
   border: 5px  solid  rgb(198, 168, 216);
-
+  border-color: rgb(198, 168, 216);
+  background-color: #262447;
 }
 
 .dark form {
   color: rgb(198, 168, 216);
+  background-color: #262447;
 }
 
 .dark footer {
@@ -117,25 +103,29 @@ font-family: ;
  color:  rgb(198, 168, 216);
  text-decoration: none;
 }
+
 /* Light mode */
 
 .light {
-  /* border: 5px solid rgb(129, 18, 194); */
   background-color: #f4e3fc;
   color: #262447;
   height: 100vh;
   border-color: rgb(129,18,194);
 }
-
+.light body {
+  background-color: #f4e3fc;
+}
 .light header {
   border-color: rgb(129,18,194);
 }
 .light aside {
   border-color: rgb(129,18,194);
+  background-color: #f4e3fc;
 }
 
 .light main {
   border: 5px  solid  rgb(129,18,194);
+  background-color: #f4e3fc;
 
 }
 
@@ -156,12 +146,11 @@ font-family: ;
 .light div {
   border-color: rgb(129,18,194);
 }
+
 /* .light .submitButton {
   background-color: #9b1894;
 } */
 
-
-/* insert elements light mode below */
 .blogPosts {
   height: 60vh;
   border-top: 5px solid;
@@ -169,16 +158,12 @@ font-family: ;
   margin-bottom: 10px;
 }
 
-
-
 footer {
 
   height: 100px;
   border-top: 5px solid;
-
-  /* clear:both; */
-  */ bottom: 0px;
-  /* display: flex; */
+  bottom: 0px;
+ 
 }
 
 footer  h2 {
