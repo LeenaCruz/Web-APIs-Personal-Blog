@@ -25,7 +25,7 @@ modeSwitcher.setAttribute('class', 'modeSwitcher')
 
 function init() {
 
-    mode = localStorage.getItem('currentMode') || "";
+    mode = sessionStorage.getItem('currentMode') || "";
     if (mode === "") {
         mode = 'light';
         container.setAttribute('class', 'light');
@@ -44,7 +44,7 @@ function init() {
         modeSwitcher.setAttribute('src', './assets/images/dark-icon.png')
     }
 
-    localStorage.setItem('currentMode', (mode));
+    sessionStorage.setItem('currentMode', (mode));
     console.log(mode);
 
 }
@@ -64,7 +64,7 @@ modeSwitcher.addEventListener('click', function () {
         modeSwitcher.setAttribute('src', './assets/images/dark-icon.png')
     }
 
-    localStorage.setItem('currentMode', (mode));
+    sessionStorage.setItem('currentMode', (mode));
     console.log(mode);
 });
 
