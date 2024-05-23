@@ -46,6 +46,14 @@ The following animation demonstrates the application functionality:
 (Live URL)
 
 ## Resources
+![JS Create Element](https://www.educative.io/answers/what-is-the-createelement-method-in-dom?utm_term=&utm_campaign=%5BNew+-+Mar+24%5D+Brand+Core+Performance+Max&utm_source=adwords&utm_medium=ppc&hsa_acc=5451446008&hsa_cam=21099703438&hsa_grp=&hsa_ad=&hsa_src=x&hsa_tgt=&hsa_kw=&hsa_mt=&hsa_net=adwords&hsa_ver=3&gad_source=2&gclid=EAIaIQobChMI28X99aOihgMVVx6tBh1EswUQEAEYASABEgLyFvD_BwE)
 
 ## Credits
 
+Shout out to: 
+
+Akon
+Aleksander
+Stephen
+
+Thank you for your insight! 

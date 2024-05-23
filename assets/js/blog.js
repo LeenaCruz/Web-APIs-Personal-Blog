@@ -11,7 +11,9 @@ const backButton = document.querySelector('button');
 
 backButton.addEventListener('click', function (event){
     event.preventDefault();
+    // let mode = localStorage.getItem('currentMode');
     location.href = "./index.html";
+// console.log(mode);
 });
 
 function init() {

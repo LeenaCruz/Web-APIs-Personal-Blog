@@ -1,25 +1,63 @@
-// Icon of dark mode could be here?
+// function icon of dark mode could be here?
 
 
-const containerEl = document.querySelector('container');
-const formEl = document.querySelector('form');
-//const photoEl = document.querySelector('photo');
-
-// const imgEL = document.querySelector('img');
-// imgEL.setAttribute('src', './assets/hero-image.jpg');
 
 
-// HEADER // Funciona pero tengo que poner le script arriba y no me gusta eso.
-// const headerEL = document.createElement("header");
-// headerEL.setAttribute("id", "header");
-// document.body.appendChild(headerEL);
 
-// const backButton = document.createElement ("div");
-// const modeEl = document.createElement("div");
-// const titleEl = document.createElement("h1");
-// document.getElementById("header").appendChild(titleEl);
-// document.getElementById("header").appendChild(backButton);
-// document.getElementById("header").appendChild(modeEl);
+// agarrar el valor del mode si es dark o light
+// puedo gudardarlo en local storage 
+// luego lo jalo 
+// sile dan click al osl se guarda light
+// si le dan click ala luna s eguarda dark
+// si el valor es light/dark quieor que mis elementos apliuqen una clsae de ligh/dark
+// set attribute ? 
 
-// titleEl.textContent = "Bienvenutti";
-// headerEL.setAttribute('style',  'height: 100px; width: 100%; border-bottom: 5px solid black; margin-bottom: 10px');
+const modeSwitcher = document.querySelector('.modeSwitcher')
+const container = document.querySelector('.styleAll')
+
+modeSwitcher.setAttribute('src', './assets/images/light-icon.png' )
+modeSwitcher.setAttribute('class', 'modeSwitcher')
+
+// on click event 
+
+function init() {
+
+    mode = localStorage.getItem('currentMode');
+
+     if (mode === "") {
+
+        mode = 'light';
+        }
+        
+        // modeSwitcher();
+     
+}
+
+// let mode = 'light';
+// let mode = JSON.parse(localStorage.getItem('currentMode')); 
+
+
+let mode = localStorage.getItem('currentMode');
+
+
+
+modeSwitcher.addEventListener('click', function () {
+
+
+if (mode === 'dark') {
+    mode = 'light';
+    container.setAttribute('class', 'light');
+    modeSwitcher.setAttribute('src', './assets/images/light-icon.png')
+}
+
+else {
+    mode = 'dark';
+    container.setAttribute('class', 'dark');
+    modeSwitcher.setAttribute('src', './assets/images/dark-icon.png')
+}
+
+localStorage.setItem('currentMode', JSON.stringify(mode));
+// console.log(mode);
+});
+
+init();
