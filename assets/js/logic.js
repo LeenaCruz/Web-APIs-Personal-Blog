@@ -25,15 +25,14 @@ modeSwitcher.setAttribute('class', 'modeSwitcher')
 
 function init() {
 
-    mode = localStorage.getItem('currentMode');
-
-    if (mode.value === "") {
+    mode = localStorage.getItem('currentMode') || "";
+    if (mode === "") {
         mode = 'light';
         container.setAttribute('class', 'light');
         modeSwitcher.setAttribute('src', './assets/images/light-icon.png')
     }
 
-    else if (mode === 'light') {
+     else if (mode === 'light') {
         mode = 'light';
         container.setAttribute('class', 'light');
         modeSwitcher.setAttribute('src', './assets/images/light-icon.png')
