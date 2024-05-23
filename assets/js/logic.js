@@ -2,30 +2,15 @@
 
 
 
-
-
-// agarrar el valor del mode si es dark o light
-// puedo gudardarlo en local storage 
-// luego lo jalo 
-// sile dan click al osl se guarda light
-// si le dan click ala luna s eguarda dark
-// si el valor es light/dark quieor que mis elementos apliuqen una clsae de ligh/dark
-// set attribute ? 
-
 const modeSwitcher = document.querySelector('.modeSwitcher')
 const container = document.querySelector('.styleAll')
 
 modeSwitcher.setAttribute('src', './assets/images/light-icon.png')
 modeSwitcher.setAttribute('class', 'modeSwitcher')
 
-// let mode = localStorage.getItem('currentMode');
-// console.log(mode);
-
-// on click event 
-
 function init() {
 
-    mode = sessionStorage.getItem('currentMode') || "";
+    mode = localStorage.getItem('currentMode') || "";
     if (mode === "") {
         mode = 'light';
         container.setAttribute('class', 'light');
@@ -44,8 +29,8 @@ function init() {
         modeSwitcher.setAttribute('src', './assets/images/dark-icon.png')
     }
 
-    sessionStorage.setItem('currentMode', (mode));
-    console.log(mode);
+    localStorage.setItem('currentMode', (mode));
+    //console.log(mode);
 
 }
 
@@ -64,8 +49,10 @@ modeSwitcher.addEventListener('click', function () {
         modeSwitcher.setAttribute('src', './assets/images/dark-icon.png')
     }
 
-    sessionStorage.setItem('currentMode', (mode));
-    console.log(mode);
+    localStorage.setItem('currentMode', (mode));
+    //console.log(mode);
 });
+
+
 
 init();
