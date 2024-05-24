@@ -40,7 +40,7 @@ THEN I am presented with a link to the developer's portfolio.
 
 ## Mock Up
 The following animation demonstrates the application functionality:
-![A user adds a blog through a form, then the post appears on the following page.](/assets/100-web-apis-challenge-demo.gif)
+![A user adds a blog through a form, then the post appears on the following page.](/assets/images/WebAPIsLeena.gif)
 
 ## Deployed Application 
 [Live URL](https://leenacruz.github.io/Web-APIs-Personal-Blog/)
