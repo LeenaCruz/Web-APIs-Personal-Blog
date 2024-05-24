@@ -4,9 +4,14 @@
   box-sizing: border-box;
   margin: 0px;
   padding: 0px;
-font-family: ;
+font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
+.flexcontainer {
+  display: flex;
+  justify-content: space-between;
+
+}
 
 .header {
   width: 100%;
@@ -43,9 +48,8 @@ font-family: ;
 .photo {
   border: 5px solid black;
   width: 49%;
-  height: 100vh;
+  min-height: 100vh;
   display: block;
-  float: left;
   position: relative;
   /* margin-right: 5px; */
 }
@@ -65,7 +69,7 @@ font-family: ;
 .dark {
   border-color:  white;
   background-color: #262447;
-  height: 100vh;
+  min-height: 100vh;
   color: rgb(198, 168, 216);
 }
 
@@ -109,7 +113,7 @@ font-family: ;
 .light {
   background-color: #f4e3fc;
   color: #262447;
-  height: 100vh;
+  min-height: 100vh;
   border-color: rgb(129,18,194);
 }
 .light body {
@@ -143,9 +147,9 @@ font-family: ;
   text-decoration: none;
  }
 
-.light div {
+/* .light div {
   border-color: rgb(129,18,194);
-}
+} */
 
 /* .light .submitButton {
   background-color: #9b1894;

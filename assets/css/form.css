@@ -1,7 +1,6 @@
 
 .container {
     display: flex;
-    float:right;
     width: 50%;
     }
 
@@ -26,7 +25,6 @@ form h2 {
   
 }
 
-
 .inputGroup {
     margin:10px;
     padding: 5px;
@@ -34,8 +32,7 @@ form h2 {
     font-size: 20px;
     /* color: #9b1894; */
     text-align: center;
-    
-  
+
   }
 
 
