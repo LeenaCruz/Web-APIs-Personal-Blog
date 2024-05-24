@@ -43,10 +43,10 @@ The following animation demonstrates the application functionality:
 ![A user adds a blog through a form, then the post appears on the following page.](/assets/100-web-apis-challenge-demo.gif)
 
 ## Deployed Application 
-(Live URL)
+[Live URL](https://leenacruz.github.io/Web-APIs-Personal-Blog/)
 
 ## Resources
-![JS Create Element](https://www.educative.io/answers/what-is-the-createelement-method-in-dom?utm_term=&utm_campaign=%5BNew+-+Mar+24%5D+Brand+Core+Performance+Max&utm_source=adwords&utm_medium=ppc&hsa_acc=5451446008&hsa_cam=21099703438&hsa_grp=&hsa_ad=&hsa_src=x&hsa_tgt=&hsa_kw=&hsa_mt=&hsa_net=adwords&hsa_ver=3&gad_source=2&gclid=EAIaIQobChMI28X99aOihgMVVx6tBh1EswUQEAEYASABEgLyFvD_BwE)
+[JS Create Element](https://www.educative.io/answers/what-is-the-createelement-method-in-dom?utm_term=&utm_campaign=%5BNew+-+Mar+24%5D+Brand+Core+Performance+Max&utm_source=adwords&utm_medium=ppc&hsa_acc=5451446008&hsa_cam=21099703438&hsa_grp=&hsa_ad=&hsa_src=x&hsa_tgt=&hsa_kw=&hsa_mt=&hsa_net=adwords&hsa_ver=3&gad_source=2&gclid=EAIaIQobChMI28X99aOihgMVVx6tBh1EswUQEAEYASABEgLyFvD_BwE)
 
 ## Credits
 
