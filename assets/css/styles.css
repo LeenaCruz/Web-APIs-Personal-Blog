@@ -1,11 +1,11 @@
-/* Define styl for the index */
-/*  divs have solid borders, style is flat, black and white */
+
 * {
   box-sizing: border-box;
   margin: 0px;
   padding: 0px;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
+
 
 .flexcontainer {
   display: flex;
@@ -55,11 +55,10 @@
   min-height: 100vh;
   display: block;
   position: relative;
-  /* margin-right: 5px; */
+
 }
 
 #imgHero {
-  /* border: 10px solid red; */
   position: absolute;
   top: 50%;
   left: 50%;
@@ -71,7 +70,7 @@
 /*  Dark Mode */
 
 .dark {
-  border-color: white;
+  /* border-color: white; */
   background-color: #262447;
   min-height: 100vh;
   color: rgb(198, 168, 216);
@@ -120,7 +119,8 @@
   background-color: #f4e3fc;
   color: #262447;
   min-height: 100vh;
-  border-color: rgb(129, 18, 194);
+  border-color: rgb(129,18,194);
+ 
 }
 
 .light body {
@@ -156,14 +156,6 @@
   text-decoration: none;
 }
 
-/* .light div {
-  border-color: rgb(129,18,194);
-} */
-
-/* .light .submitButton {
-  background-color: #9b1894;
-} */
-
 .blogPosts {
   height: 60vh;
   border-top: 5px solid;
@@ -194,7 +186,7 @@ footer ul {
   list-style-type: none;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 700px) {
 
 
   .flexcontainer {
@@ -204,19 +196,20 @@ footer ul {
   }
 
   .container {
-    display: flex;
     width: 100%;
+   
   }
 
   .photo {
     width: 100%;
-    height: auto;
+    height: 45%;
     order: 2;
+    display: block;
+  
   }
 
   #imgHero {
     width: 100%;
-    height: auto;
 
   }
   

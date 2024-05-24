@@ -54,7 +54,7 @@ Shout out to:
 
 Akon (Creating Arrays, localStorage)
 
-Aleksander (Creating JS elemnents)
+Aleksander (Creating JS elements, CSS "overflow" property)
 
 Stephen (localStorage, CSS)
 
