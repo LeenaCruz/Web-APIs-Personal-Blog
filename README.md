@@ -52,8 +52,11 @@ The following animation demonstrates the application functionality:
 
 Shout out to: 
 
-Akon
-Aleksander
-Stephen
+Akon (Creating Arrays, localStorage)
+
+Aleksander (Creating JS elemnents)
+
+Stephen (localStorage, CSS)
+
 
 Thank you for your insight! 

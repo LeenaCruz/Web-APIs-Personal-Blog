@@ -1,10 +1,8 @@
 
 .container {
-    /* border: 5 px solid black; */
     display: flex;
     float:right;
     width: 50%;
-    
     }
 
 
@@ -40,11 +38,6 @@ form h2 {
   
   }
 
-  /* .inputGroup input {
-    margin-top: 10px;
-    margin-bottom: 10px;
-    display: block;
-  } */
 
   .inputGroup label  {
     padding: 5px;
